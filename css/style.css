@@ -16,8 +16,8 @@ body {
   background: rgb(102, 102, 102);
   background: linear-gradient(
     180deg,
-    rgba(102, 102, 102, 0.6184971098265897) 0%,
-    rgba(238, 238, 238, 1) 76%
+    rgb(196, 196, 196) 50%,
+    rgba(255, 255, 255, 0.7) 76%
   );
   position: fixed;
   display: flex;
@@ -202,6 +202,166 @@ body {
 /* header */
 .header {
   margin-left: 8rem;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(../img/header-1.jpeg) center no-repeat;
+  background-size: cover;
+}
+.brand {
+  display: flex;
+  cursor: pointer;
+}
+.hotel-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #deaa86;
+  letter-spacing: 0.2rem;
+}
+.banner {
+  color: #ddd;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  animation: anim 2s;
+}
+.banner-paragraph {
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: anim 1.5s 0.5s backwards;
+}
+.banner-button {
+  width: 21rem;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  color: #333;
+  border: none;
+  letter-spacing: 0.2rem;
+  border-radius: 10rem;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(to right, gold, goldenrod);
+  animation: anim 1.5s 1.2s backwards;
+  /* transition: all ease-in-out 1s; */
+}
+.banner-button:hover {
+  background: linear-gradient(to left, gold, goldenrod);
+}
+.banner-button:active {
+  transform: translateY(0.2rem);
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* end of header */
+/* about us */
+.about-us {
+  margin-left: 8rem;
+  display: flex;
+  background-color: #ddd;
+}
+.about-us-content {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+  box-sizing: border-box;
+}
+.about-us-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #555;
+}
+.small-underline {
+  width: 9rem;
+  height: 0.1rem;
+  background-color: #b85d1c;
+  margin: 0 auto 1rem auto;
+}
+.big-underline {
+  width: 20rem;
+  height: 0.1rem;
+  background-color: #b85d1c;
+}
+.subheading {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  color: #b85d1c;
+}
+
+.about-us-paragraph {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.about-us-btn {
+  width: 15rem;
+  padding: 0.7rem 0.5rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #b85d1c;
+  background-color: transparent;
+  outline: none;
+  border: 0.1rem solid #b85d1c;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.btn-arrow {
+  margin-left: 0.6rem;
+  transition: all 0.5s;
+}
+.about-us-btn:hover .btn-arrow {
+  margin-left: 1.5rem;
+}
+.about-us-btn:active {
+  transform: translateY(0.2rem);
+}
+.about-us-images {
+  flex: 1 1;
+  position: relative;
+}
+.image {
+  width: 32rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem;
+  border: 0.1rem solid #b85d1c;
+}
+.image-1 {
+  transform: translate(-20%, -90%);
+}
+.image-2 {
+  transform: translate(-70%, -70%);
+}
+.image-3 {
+  transform: translate(-50%, -50%);
+}
+.image-4 {
+  transform: translate(-30%, -30%);
+}
+
+/* endof about us */
 /* end of navbar */
